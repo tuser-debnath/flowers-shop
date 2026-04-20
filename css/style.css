@@ -34,6 +34,10 @@ h6 {
   font-family: "Noto Serif", serif;
 }
 
+p {
+  font-size: 22px;
+}
+
 .auto-width {
   max-width: 1140px;
   margin: 0 auto;
@@ -54,9 +58,36 @@ h6 {
   margin-bottom: 0;
 }
 
+.section-margin {
+  margin-top: 100px;
+}
+
+.section-head {
+  max-width: 888px;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.section-heading {
+  font-size: 50px;
+  color: #000000;
+  font-weight: 700;
+}
+
+.section-heading-span {
+  color: #e95a08;
+}
+
 @media screen and (max-width: 576px) {
   .text-description {
     font-size: 14px;
+  }
+  .section-head {
+  margin-bottom: 30px;
+}
+  .section-heading {
+    font-size: 24px;
   }
 }
 
@@ -67,10 +98,10 @@ h6 {
   padding: 25px 0;
 }
 
-.logo img{
-    width: 135px;
-    height: 82px;
-  }
+.logo img {
+  width: 135px;
+  height: 82px;
+}
 
 nav ul li {
   list-style: none;
@@ -112,7 +143,7 @@ nav ul li a.active {
 }
 
 @media screen and (max-width: 576px) {
-  .logo img{
+  .logo img {
     width: 63px;
     height: 38px;
   }
@@ -128,5 +159,57 @@ nav ul li a.active {
   }
   .banner-header {
     font-size: 24px;
+  }
+}
+
+/* Our Plants Css Start */
+.plants-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  row-gap: 30px;
+  column-gap: 20px;
+}
+
+.single-plants img {
+  width: 100%;
+}
+
+.plant-title {
+  color: #111111;
+  font-weight: 500;
+  margin-bottom: 0;
+}
+
+.plant-price {
+  color: #111111;
+  font-weight: 600;
+  margin-top: 5px;
+}
+
+.plant-button {
+  padding: 12px 20px;
+  width: 100%;
+  background-color: #e95a08;
+  color: #fff;
+  border: none;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+@media screen and (max-width: 576px) {
+  .plants-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .single-plants {
+    max-width: 200px;
+  }
+  .plant-title {
+    font-size: 16px;
+  }
+  .plant-price {
+    font-size: 16px;
+  }
+  .plant-button {
+    font-size: 14px;
   }
 }
