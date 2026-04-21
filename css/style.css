@@ -84,10 +84,13 @@ p {
     font-size: 14px;
   }
   .section-head {
-  margin-bottom: 30px;
-}
+    margin-bottom: 30px;
+  }
   .section-heading {
     font-size: 24px;
+  }
+  .section-margin {
+    margin-top: 50px;
   }
 }
 
@@ -212,4 +215,48 @@ nav ul li a.active {
   .plant-button {
     font-size: 14px;
   }
+}
+
+/* Plant Lover Ares Css Start */
+.plant-lover {
+  align-items: center;
+  gap: 60px;
+}
+
+.plant-lover-image {
+  position: relative;
+}
+
+.plant-lover-image img {
+  max-width: 100%;
+}
+
+.plant-lover-image,
+.plant-lover-text {
+  flex: 1;
+}
+
+.badge {
+  position: absolute;
+  top: -125px;
+  right: -100px;
+}
+
+.badge img {
+  width: 285px;
+  height: 285px;
+}
+
+.plant-lover-text ul li {
+  color: #a1a1a1;
+}
+
+@media screen and (max-width: 576px) {
+  .plant-lover {
+    flex-direction: column;
+    gap: 30px;
+  }
+  .badge {
+  display: none;
+}
 }
