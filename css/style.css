@@ -324,3 +324,49 @@ nav ul li a.active {
     right: 0;
   }
 }
+
+/* Footer Area Css Start */
+.footer-area{
+  background-color: #fff;
+  padding: 50px 0;
+}
+
+.footer-content > div{
+  flex: 1;
+}
+
+.footer-content{
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  /* grid-template-columns: repeat(4, 1fr); */
+}
+
+.footer-area ul{
+  padding: 0;
+}
+
+.footer-area ul li{
+  list-style: none;
+  margin-bottom: 30px;
+}
+
+.footer-area ul li a{
+  text-decoration: none;
+  font-size: 22px;
+  color: #6B7280;
+}
+
+.footer-area img{
+  margin-right: 20px;
+}
+
+@media screen and (max-width: 576px) {
+ .footer-content{
+  flex-direction: column;
+  gap: 20px;
+}
+.footer-content p{
+  font-size: 16px;
+}
+}
