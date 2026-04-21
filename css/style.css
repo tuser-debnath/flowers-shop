@@ -257,6 +257,70 @@ nav ul li a.active {
     gap: 30px;
   }
   .badge {
-  display: none;
+    display: none;
+  }
 }
+
+/* Join Area Css Start */
+.join-area {
+  background-image: url(../images/news-letter-bg.png);
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.join-content {
+  width: 830px;
+  margin: 0 auto;
+  color: #fff;
+  text-align: center;
+}
+
+.join-content .section-heading {
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.join-content form {
+  position: relative;
+}
+
+.join-content input {
+  width: 100%;
+  padding: 15px 20px;
+  font-size: 16px;
+  outline: 0;
+  border: none;
+  position: relative;
+}
+
+.join-btn {
+  padding: 15px 50px;
+  background-color: #e95a08;
+  color: #fff;
+  border: none;
+  font-size: 16px;
+  font-weight: 600;
+  position: absolute;
+  top: 0;
+  right: -40px;
+}
+
+@media screen and (max-width: 576px) {
+  .join-area{
+    height: 300px;
+  }
+  .join-content {
+    max-width: 350px;
+  }
+  .join-content input {
+    max-width: 310px;
+  }
+  .join-btn {
+    padding: 15px 15px;
+    right: 0;
+  }
 }
